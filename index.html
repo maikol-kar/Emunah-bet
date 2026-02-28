@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emunáh Bet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Frank+Ruhl+Libre:wght@500;700;800&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hebrew-pattern"></div>
+
+    <nav class="navbar-custom d-flex justify-content-between align-items-center px-4 py-3 fixed-top">
+        <div class="logo">EMUNÁH BET</div>
+        <div class="nav-links d-none d-md-flex">
+            <a href="#musica">Música</a>
+            <a href="#integrantes">Integrantes</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <button class="btn d-md-none text-white fs-4 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            ☰
+        </button>
+    </nav>
+
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header border-bottom border-secondary">
+        <h5 class="offcanvas-title logo">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body nav-links-mobile d-flex flex-column gap-4 p-5 text-center">
+         <a href="#musica" data-bs-dismiss="offcanvas">Música</a>
+         <a href="#integrantes" data-bs-dismiss="offcanvas">Integrantes</a>
+         <a href="#nosotros" data-bs-dismiss="offcanvas">Nosotros</a>
+         <a href="#contacto" data-bs-dismiss="offcanvas">Contacto</a>
+      </div>
+    </div>
+
+
+    <header class="hero hidden d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="container">
+            <h1>EMUNÁH BET</h1>
+            <p class="hero-subtitle">Sonido profundo. Raíz antigua.</p>
+            
+            <div class="band-image-container mx-auto">
+                <img src="393.jpg" alt="Banda Emunáh Bet en el escenario" class="img-fluid">
+            </div>
+        </div>
+    </header>
+
+    <section id="musica" class="section hidden">
+        <div class="container text-center">
+            <h2><span class="hebrew-accent">✦</span> Shemá <span class="hebrew-accent">✦</span></h2>
+            <p class="shema-concept">"El llamado a escuchar con el corazón"</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="player-wrapper">
+                        <div class="track-info text-start">
+                            <span class="track-name">Sencillo Principal</span>
+                            <span class="track-artist">Emunáh Bet</span>
+                        </div>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0YG5Vuy9SsXx2A5W5gsBr0?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="integrantes" class="section hidden">
+        <div class="container text-center">
+            <h2>La Banda</h2>
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-sm-6 col-lg-3">
+                    <div class="member-card h-100">
+                        <div class="member-image-box mb-4">
+                            <img src="https://placehold.co/400x400/0a1128/ff00a6?text=Foto+Pablo" alt="Pablo Aviles" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="member-role">Compositor y Bajo</div>
+                        <div class="member-name">Pablo Aviles</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="member-card h-100">
+                        <div class="member-image-box mb-4">
+                            <img src="https://placehold.co/400x400/0a1128/ff00a6?text=Foto+Maikolkar" alt="Maikolkar" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="member-role">Voz Principal</div>
+                        <div class="member-name">maikolkar</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="member-card h-100">
+                        <div class="member-image-box mb-4">
+                            <img src="https://placehold.co/400x400/0a1128/ff00a6?text=Foto+Eugenio" alt="Eugenio Alcalde" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="member-role">Guitarra</div>
+                        <div class="member-name">Eugenio Alcalde</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="member-card h-100">
+                        <div class="member-image-box mb-4">
+                            <img src="https://placehold.co/400x400/0a1128/ff00a6?text=Foto+Claudia" alt="Claudia Martinez" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="member-role">Autora</div>
+                        <div class="member-name">Claudia Martinez</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section hidden">
+        <div class="container text-center">
+            <h2>Nuestra Esencia</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                     <div class="essence-box">
+                        <p class="about-text">
+                            Nacemos de la necesidad de conectar lo eterno con lo contemporáneo. Con una base rítmica sólida como roca antigua y melodías que buscan elevarse, nuestra música es un puente entre la tradición y el sonido actual. Somos una experiencia sonora diseñada para despertar el espíritu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="hidden">
+        <div class="container text-center">
+            <h2>Contacto</h2>
+            <p><a href="mailto:booking@emunahbet.com" class="email-link">booking@emunahbet.com</a></p>
+            
+            <div class="socials d-flex justify-content-center gap-4 my-5">
+                <a href="#">Spotify</a>
+                <a href="#">YouTube</a>
+                <a href="#">Instagram</a>
+            </div>
+            
+            <p class="copyright">&copy; 2026 Emunáh Bet.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
