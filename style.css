@@ -49,20 +49,23 @@ body {
     opacity: 0.1; z-index: -1;
 }
 
-/* NAVEGACIÓN TRANSPARENTE (GLASSMORPHISM) */
+/* =========================================
+   NAVEGACIÓN TRANSPARENTE (GLASSMORPHISM)
+   ========================================= */
 .navbar-custom {
-    background-color: rgba(10, 17, 40, 0.20);
+    background-color: rgba(10, 17, 40, 0.20); /* Opacidad reducida a 0.45 para más transparencia */
     border-bottom: 1px solid var(--accent-fuchsia-glow);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px); /* Difumina el fondo detrás del menú */
+    -webkit-backdrop-filter: blur(12px); /* Soporte para Safari */
     z-index: 1030;
 }
 
 .custom-offcanvas {
-    background-color: rgba(10, 17, 40, 0.05) !important;
+    background-color: rgba(10, 17, 40, 0.05) !important; /* Menú de móviles también transparente */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
 }
+/* ========================================= */
 
 .logo {
     font-family: var(--font-logo); 
@@ -212,110 +215,3 @@ h2 {
 
 /* Reproductor */
 .player-wrapper {
-    background: var(--bg-navy-light);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid var(--accent-fuchsia-glow);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
-}
-
-.player-wrapper:hover {
-    border-color: var(--accent-fuchsia);
-    box-shadow: 0 8px 25px var(--accent-fuchsia-glow);
-}
-
-.track-info {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.5rem;
-    gap: 0.3rem;
-}
-
-.track-name {
-    font-family: var(--font-hebrew-style);
-    color: var(--accent-fuchsia);
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-}
-
-.track-artist {
-    font-family: var(--font-logo);
-    color: var(--text-main);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    opacity: 0.8;
-}
-
-.custom-audio {
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.custom-audio::-webkit-media-controls-panel {
-    background-color: rgba(255, 0, 166, 0.1);
-}
-
-/* Caja de esencia */
-.essence-box {
-    background: var(--bg-navy-light);
-    padding: 2.5rem;
-    border-radius: 8px;
-    border: 1px solid var(--accent-fuchsia-glow);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-.about-text {
-    font-family: var(--font-hebrew-style);
-    font-size: 1.1rem;
-    line-height: 1.9;
-    color: var(--text-main);
-    letter-spacing: 0.5px;
-}
-
-/* Footer */
-footer {
-    background-color: var(--bg-navy-light);
-    padding: 4rem 0;
-    border-top: 1px solid var(--accent-fuchsia-glow);
-    text-align: center;
-}
-
-footer h2 {
-    color: var(--text-main);
-    margin-bottom: 2rem;
-}
-
-.email-link {
-    color: var(--accent-fuchsia);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 1.1rem;
-}
-
-.email-link:hover {
-    color: var(--text-main);
-    text-decoration: underline;
-}
-
-.socials a {
-    color: var(--accent-fuchsia);
-    text-decoration: none;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    transition: all 0.3s ease;
-}
-
-.socials a:hover {
-    color: var(--text-main);
-    transform: scale(1.1);
-}
-
-.copyright {
-    color: var(--text-main);
-    opacity: 0.6;
-    font-size: 0.85rem;
-    margin-top: 2rem;
-}
